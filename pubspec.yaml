@@ -42,7 +42,10 @@ dependencies:
   animated_text_kit: ^4.2.2
   shared_preferences: ^2.2.0
   http: ^1.1.0
-  
+  url_launcher: ^6.1.11
+  google_maps_flutter: ^2.3.0
+  share_plus: ^7.0.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -69,6 +72,12 @@ flutter:
   assets:
     - assets/images/couple.jpg
     - assets/images/hero_background.jpg
+    - assets/images/gallery1.jpeg
+    - assets/images/gallery2.jpeg
+    - assets/images/gallery3.jpeg
+    - assets/images/gallery4.jpeg
+    - assets/images/gallery5.jpeg
+    - assets/images/gallery6.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
