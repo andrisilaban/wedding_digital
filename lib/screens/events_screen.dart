@@ -37,6 +37,16 @@ class EventsScreen extends StatelessWidget {
             latitude: 40.7135, // Add your actual latitude
             longitude: -74.0070, // Add your actual longitude
           ),
+          SizedBox(height: 20),
+          EventCard(
+            title: 'Reception',
+            date: 'August 18, 2025',
+            time: '5:00 PM',
+            location: 'Bale ASRI Pusdai Bandung',
+            address: '123 Bandung, City',
+            latitude: -6.90301,
+            longitude: 107.64995,
+          ),
         ],
       ),
     );

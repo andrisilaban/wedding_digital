@@ -1,5 +1,5 @@
-// widgets/location_map.dart
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LocationMap extends StatelessWidget {
   final double latitude;
@@ -15,6 +15,17 @@ class LocationMap extends StatelessWidget {
     required this.address,
   });
 
+  void _openGoogleMaps() async {
+    final Uri googleMapsUri = Uri.parse(
+        'https://www.google.com/maps/search/?api=1&query=$latitude,$longitude');
+
+    if (await canLaunchUrl(googleMapsUri)) {
+      await launchUrl(googleMapsUri, mode: LaunchMode.externalApplication);
+    } else {
+      throw 'Could not open the map.';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -27,7 +38,6 @@ class LocationMap extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
         child: Stack(
           children: [
-            // Add map implementation using google_maps_flutter package
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -41,9 +51,7 @@ class LocationMap extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                   ElevatedButton.icon(
-                    onPressed: () {
-                      // Implement navigation using maps
-                    },
+                    onPressed: _openGoogleMaps,
                     icon: const Icon(Icons.directions),
                     label: const Text('Get Directions'),
                   ),
