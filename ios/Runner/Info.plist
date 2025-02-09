@@ -45,5 +45,11 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location to show directions to the wedding venues</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to photo library to add photos to the guest book</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We need camera access to take photos for the guest book</string>
 </dict>
 </plist>

@@ -47,7 +47,7 @@ dependencies:
   share_plus: ^7.0.2
   intl: ^0.20.2
   image_picker: ^0.8.7
-  firebase_storage: ^11.0.0  # If you want to store photos cached_network
+  # firebase_storage: ^11.0.0  # If you want to store photos cached_network
   flutter_launcher_icons: ^0.14.3
 
 dev_dependencies:
