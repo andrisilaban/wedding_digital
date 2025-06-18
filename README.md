@@ -1,4 +1,4 @@
-# wedding_digitital
+# wedding_digital
 
 A new Flutter project.
 

@@ -63,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                               speed: const Duration(milliseconds: 200),
                             ),
                           ],
-                          isRepeatingAnimation: false,
+                          isRepeatingAnimation: true,
                         ),
                         const SizedBox(height: 20),
                         const Text(
