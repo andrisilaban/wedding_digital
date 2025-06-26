@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:wedding_digital/screens/auth_screen.dart';
 
 import '../widgets/animated_countdown.dart';
 import 'events_screen.dart';
@@ -65,6 +66,12 @@ class HomeScreen extends StatelessWidget {
                           ],
                           isRepeatingAnimation: true,
                         ),
+                        const SizedBox(height: 20),
+                        ElevatedButton(
+                            onPressed: () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (context) => const AuthScreen())),
+                            child: const Text('Auth')),
                         const SizedBox(height: 20),
                         const Text(
                           'ARE GETTING MARRIED',
